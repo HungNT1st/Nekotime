@@ -8,6 +8,7 @@ A Time Reminder Chrome Extension app tracking time usage and pop up a reminder o
 3. Setting: Setting up time limit, snooze duration, and select websites with exact links with default 4 categories include social media, entertainment, shopping, game
 4. Popup reminder: the popup with input gif/jpg/png, speech bubbles, and voices when the time limit reached
 
+## Instructions
 2. Navigate to the cloned repository.
       cd Nekotime
 3. Install the necessary dependencies.
