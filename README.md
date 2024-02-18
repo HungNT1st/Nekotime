@@ -8,12 +8,6 @@ A Time Reminder Chrome Extension app tracking time usage and pop up a reminder o
 ![image](https://github.com/HungNT1st/Nekotime/assets/148011394/7fab9e09-2de2-4a5b-98c9-c891ef937b4f)
 
 
-![image](https://github.com/HungNT1st/Nekotime/assets/148011394/1351acae-c222-435c-a4e7-62f82da909e3)
-
-![image](https://github.com/HungNT1st/Nekotime/assets/148011394/e3e24fdf-46c8-40c9-a1f0-f42a68825a5a)
-
-
-
 
 
 
