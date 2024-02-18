@@ -1,9 +1,6 @@
 ## Nekotime
 A Time Reminder Chrome Extension app tracking time usage and pop up a reminder of gif/jpg/png, speech bubble with text input, and voices output mp3. 
 ![image](https://github.com/HungNT1st/Nekotime/assets/148011394/4d3e91da-7697-47dd-b062-4056ab1dad44)
-![image](https://github.com/HungNT1st/Nekotime/assets/148011394/07ad9c97-f341-43eb-9173-f0b978bb6d00)
-![image](https://github.com/HungNT1st/Nekotime/assets/148011394/6e314389-3104-43c8-931c-7d5cc010977f)
-![image](https://github.com/HungNT1st/Nekotime/assets/148011394/89e67092-c934-4b68-a0ce-13d187da21ba)
 
 
 
