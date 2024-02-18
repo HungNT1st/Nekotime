@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meganeko Settings</title>
+  <link rel="icon" href="../assets/favicon/favicon_48.png" type="image/x-icon">
+  <link rel="stylesheet" href="setting.css">
+  <script src="setting.js" type="module"></script>
+</head>
+<body>
+  <div class="header">
+    <img src="../assets/favicon/favicon_128.png" alt="Logo">
+    <h1>Meganeko Settings</h1>
+  </div>
+  <section>
+    <h3>Website usage limit</h3>
+    <form class="usage-setting">
+      <div id="website-select">
+        <h5>Select websites</h5>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-btn">
+              <span>Social Media</span>
+              <img src="../assets/icons/chevron-down.svg" alt="Arrow down">
+            </div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="https://www.facebook.com" id="facebook" class="website-checkbox">
+                  <label for="facebook">Facebook</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.instagram.com" id="instagram" class="website-checkbox">
+                  <label for="instagram">Instagram</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.x.com" id="twitter" class="website-checkbox">
+                  <label for="twitter">Twitter</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.threads.net" id="threads" class="website-checkbox">
+                  <label for="threads">Threads</label>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-btn">
+                <span>Entertainment</span>
+                <img src="../assets/icons/chevron-down.svg" alt="Arrow down">
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="https://www.youtube.com" id="youtube" class="website-checkbox">
+                  <label for="youtube">Youtube</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.netflix.com" id="netflix" class="website-checkbox">
+                  <label for="netflix">Netflix</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.twitch.com" id="twitch" class="website-checkbox">
+                  <label for="twitch">Twitch</label>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-btn">
+                <span>Shopping</span>
+                <img src="../assets/icons/chevron-down.svg" alt="Arrow down">
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="https://www.amazon.com" id="amazon" class="website-checkbox">
+                  <label for="amazon">Amazon</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.ebay.com" id="ebay" class="website-checkbox">
+                  <label for="ebay">Ebay</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.aliexpress.com" id="aliexpress" class="website-checkbox">
+                  <label for="aliexpress">Aliexpress</label>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-btn">
+                <span>Game</span>
+                <img src="../assets/icons/chevron-down.svg" alt="Arrow down">
+              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="https://www.chess.com" id="chess" class="website-checkbox">
+                  <label for="chess">Chess.com</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="https://www.agar.io" id="agario" class="website-checkbox">
+                  <label for="agario">Agar.io</label>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <input type="text" name="custom" id="custom-domain" class="custom-domain" placeholder="https://domain.com">
+      </div>
+      <div class="time-setting">
+        <div>
+          <h5>Time limit</h5>
+          <div class="time-select" id="limit-select">
+            <input type="radio" name="time-limit" id="2h" value="7200" class="limit-checkbox">
+            <label for="2h">2h</label>
+            <input type="radio" name="time-limit" id="1h30" value="5400" class="limit-checkbox">
+            <label for="1h30">1h30m</label>
+            <input type="radio" name="time-limit" id="1h" value="3600" class="limit-checkbox">
+            <label for="1h">1h</label>
+          </div>
+          <div id="limit-custom" class="time-input">
+            <span>Custom:</span>
+            <div>
+              <input type="number" list="hour" name="hour" id="hour" min="0" max="23" step="1">
+              <label for="hour">h</label>
+            </div>
+            <div>
+              <input type="number" list="minute" name="minute" id="minute" min="0" max="59" step="1">
+              <label for="minute">m</label>
+            </div>
+            <div>
+              <input type="number" list="second" name="second" id="second" min="0" max="59" step="1">
+              <label for="second">s</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5>Snooze duration</h5>
+            <div class="time-select" id="snooze-select">
+                <input type="radio" name="snooze" id="30m" value="1800" class="snooze-checkbox">
+                <label for="30m">30m</label>
+                <input type="radio" name="snooze" id="15m" value="900" class="snooze-checkbox">
+                <label for="15m">15m</label>
+                <input type="radio" name="snooze" id="5m" value="300" class="snooze-checkbox">
+                <label for="5m">5m</label>
+                <input type="radio" name="snooze" id="1m" value="60" class="snooze-checkbox">
+                <label for="1m">1m</label>
+              </div>
+              <div id="snooze-custom" class="time-input">
+                <span>Custom:</span>
+                <div>
+                  <input type="number" list="hour" name="hour" id="hour" min="0" max="23" step="1">
+                <label for="hour">h</label>
+              </div>
+              <div>
+                <input type="number" list="minute" name="minute" id="minute" min="0" max="59" step="1">
+                <label for="minute">m</label>
+              </div>
+              <div>
+                <input type="number" list="second" name="second" id="second" min="0" max="59" step="1">
+                <label for="second">s</label>
+              </div>
+            </div>
+          </div>
+          <input type="button" value="Update" class="update-btn" id="update-btn">
+        </div>
+      </div>
+      <div class="time-display">
+        <h5>Limits</h5>
+        <ul class="limit-list"></ul>
+        <h5>Reminders</h5>
+        <ul class="snooze-list"></ul>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

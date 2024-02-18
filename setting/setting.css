@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --text-color: #0f0319;
+  --background-color: #fcf9ff;
+  --primary-color: #d8b9f3;
+  --secondary-color: #f08ced;
+  --accent-color: #e958ca;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px 40px;
+  font-size: 1rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.027rem;
+}
+
+h2 {
+  font-size: 1.802rem;
+}
+
+h3 {
+  font-size: 1.602rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.424rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.266rem;
+  margin: 1rem 0;
+}
+
+button,
+input {
+  font-family: "Karla", sans-serif;
+}
+
+input {
+  border: solid 2px #e0dfe1;
+  border-radius: 4px;
+  min-width: 32px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus-visible {
+  border: solid 2px var(--secondary-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.header > img {
+  width: 48px;
+  height: 48px;
+}
+
+.usage-setting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.update-btn {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.update-btn:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--secondary-color) 50%,
+    var(--accent-color) 50%
+  );
+  cursor: pointer;
+}
+
+.update-btn:active {
+  transform: scale(0.95);
+}
+
+.custom-domain {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.accordion-item > .accordion-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: color-mix(
+    in srgb,
+    var(--primary-color) 40%,
+    transparent 60%
+  );
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  transition: background-color 0.3s;
+}
+
+.accordion-item > .accordion-btn:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--primary-color) 60%,
+    transparent 40%
+  );
+  cursor: pointer;
+}
+
+.accordion-item > .accordion-btn > img {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.accordion-item.active > .accordion-btn {
+  background-color: color-mix(
+    in srgb,
+    var(--primary-color) 80%,
+    var(--accent-color) 20%
+  );
+}
+
+.accordion-item.active > .accordion-btn > img {
+  transform: rotate(180deg);
+}
+
+.accordion-item > ul {
+  /* display: none; */
+  max-height: 0;
+  list-style: none;
+  padding: 0px 12px;
+  margin: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.accordion-item.active > ul {
+  max-height: 768px;
+  list-style: none;
+}
+
+.accordion-item > ul > li {
+  margin: 8px 0;
+}
+
+.time-display ul {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+.time-setting > div {
+  margin-bottom: 20px;
+}
+
+.time-input {
+  display: flex;
+  gap: 8px;
+}
+
+.time-select {
+  margin-bottom: 12px;
+}
+
+.time-select input {
+  display: none;
+}
+
+.time-select label {
+  display: inline-block;
+  min-width: 50px;
+  padding: 2px 6px;
+  background-color: color-mix(in srgb, lightslategray 20%, transparent 80%);
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.15s;
+  user-select: none;
+}
+
+.time-select label:hover {
+  background-color: color-mix(in srgb, lightslategray 30%, transparent 70%);
+  cursor: pointer;
+}
+
+.time-select input:checked + label {
+  background-color: var(--primary-color);
+}

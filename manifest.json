@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Meganeko",
+  "description": "A pet to manage your tasks",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "background": {
+    "service_worker": "./background/background.js"
+  },
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/Laufey/*.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScripts/content.js", "modal/modal2.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_title": "Meganeko"
+  },
+  "icons": {
+    "16": "./assets/favicon/favicon_16.png",
+    "48": "./assets/favicon/favicon_48.png",
+    "128": "./assets/favicon/favicon_128.png"
+  }
+}

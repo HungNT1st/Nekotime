@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <link href="popup.css" rel="stylesheet" type="text/css" />
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <button class="nav-btn" id="time" selected="true">
+              <img
+                src="../assets/icons/clock-outlined.svg"
+                alt="Logo"
+                class="inactive"
+              />
+              <img
+                src="../assets/icons/clock-solid.svg"
+                alt="Logo"
+                class="active"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" id="pet" selected="false">
+              <img
+                src="../assets/icons/meganeko-inactive.svg"
+                alt="Logo"
+                class="inactive"
+              />
+              <img
+                src="../assets/icons/meganeko-active.svg"
+                alt="Logo"
+                class="active"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="nav-btn" id="setting">
+              <img src="../assets/icons/setting-outlined.svg" alt="Logo" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main id="page" class="page">
+        <section id="time-page" class="time-page">
+          <h3>Website Usage</h3>
+          <ul class="limit-display" id="limit-display"></ul>
+        </section>
+        <section id="pet-page" class="pet-page">
+          <h3>Import popup</h3>
+          <div class="drop-zone">
+            <span class="drop-zone__prompt"
+              >Drop file here or click to upload</span
+            >
+            <input type="file" name="myFile" class="drop-zone__input" />
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>
